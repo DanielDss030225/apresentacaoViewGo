@@ -1,0 +1,593 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    font-family: 'Roboto', sans-serif;
+    background: #F8F9FA;
+    color: #202124;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+}
+
+h1,
+h2,
+h3 {
+
+    font-weight: 500;
+
+}
+
+p {
+
+    font-weight: 400;
+
+}
+
+button {
+
+    font-family: inherit;
+
+}
+
+input {
+
+    font-family: inherit;
+
+}
+
+.app-header {
+
+    max-width: 1200px;
+    margin: 70px auto 40px;
+    padding: 0 24px;
+
+    display: flex;
+    align-items: center;
+    gap: 32px;
+
+}
+
+.app-icon {
+
+    width: 170px;
+    height: 170px;
+
+    border-radius: 28px;
+
+    object-fit: cover;
+
+    box-shadow: 0 4px 20px rgba(0, 0, 0, .08);
+
+}
+
+.app-info {
+
+    flex: 1;
+
+}
+
+.app-info h1 {
+
+    font-size: 42px;
+    font-weight: 500;
+    margin-bottom: 8px;
+
+}
+
+.developer {
+
+    color: #01875f;
+    font-size: 18px;
+    font-weight: 500;
+
+    margin-bottom: 18px;
+
+}
+
+.description {
+
+    font-size: 16px;
+    color: #5f6368;
+
+    line-height: 1.6;
+
+    max-width: 650px;
+
+    margin-bottom: 28px;
+
+}
+
+button {
+
+    background: #01875f;
+    color: #fff;
+
+    border: none;
+
+    padding: 14px 34px;
+
+    border-radius: 999px;
+
+    font-size: 16px;
+    font-weight: 500;
+
+    cursor: pointer;
+
+    transition: .2s;
+
+}
+
+button:hover {
+
+    background: #017256;
+
+}
+
+.app-gallery {
+
+    max-width: 1200px;
+    margin: auto;
+
+    padding: 0 24px 80px;
+
+}
+
+.app-gallery h2 {
+
+    font-size: 26px;
+    margin-bottom: 20px;
+
+}
+
+.gallery {
+
+    display: flex;
+    gap: 18px;
+
+    overflow-x: auto;
+
+    padding-bottom: 10px;
+
+}
+
+.gallery img {
+
+    width: 250px;
+
+    border-radius: 18px;
+
+    box-shadow: 0 3px 12px rgba(0, 0, 0, .08);
+
+    flex-shrink: 0;
+
+}
+
+.app-actions {
+
+    display: flex;
+    gap: 16px;
+
+    flex-wrap: wrap;
+
+    margin-top: 30px;
+
+}
+
+.btn {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    min-width: 210px;
+    height: 52px;
+
+    padding: 0 28px;
+
+    border-radius: 999px;
+
+    text-decoration: none;
+
+    font-size: 16px;
+    font-weight: 500;
+
+    transition: .25s;
+
+}
+
+.btn-primary {
+
+    background: #01875f;
+    color: white;
+
+}
+
+.btn-primary:hover {
+
+    background: #017256;
+    transform: translateY(-2px);
+
+}
+
+.btn-outline {
+
+    border: 1px solid #DADCE0;
+
+    color: #202124;
+
+    background: white;
+
+}
+
+.btn-outline:hover {
+
+    background: #F1F3F4;
+    transform: translateY(-2px);
+
+}
+
+.header {
+
+    position: sticky;
+    top: 0;
+
+    width: 100%;
+
+    background: #FFFFFF;
+
+    border-bottom: 1px solid #E8EAED;
+
+    z-index: 999;
+
+}
+
+.container {
+
+    max-width: 1280px;
+
+    height: 72px;
+
+    margin: auto;
+
+    padding: 0 24px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.logo {
+
+    display: flex;
+    align-items: center;
+    gap: 14px;
+
+    text-decoration: none;
+
+    color: #202124;
+
+    font-size: 22px;
+    font-weight: 500;
+
+}
+
+.logo img {
+
+    width: 42px;
+    height: 42px;
+
+    border-radius: 10px;
+
+}
+
+.menu {
+
+    display: flex;
+    align-items: center;
+    gap: 36px;
+
+}
+
+.menu a {
+
+    text-decoration: none;
+
+    color: #5F6368;
+
+    font-size: 15px;
+    font-weight: 500;
+
+    transition: .2s;
+
+}
+
+.menu a:hover {
+
+    color: #01875F;
+
+}
+
+.header-button {
+
+    background: #01875F;
+
+    color: #FFF;
+
+    text-decoration: none;
+
+    padding: 12px 24px;
+
+    border-radius: 999px;
+
+    font-size: 15px;
+    font-weight: 500;
+
+    transition: .2s;
+
+}
+
+.header-button:hover {
+
+    background: #017256;
+
+}
+
+/* Sections: Sobre & Contato */
+.section-about {
+    background: linear-gradient(135deg, #FFFFFF 0%, #F8F9FA 100%);
+    padding: 60px 24px;
+}
+
+.about-header {
+    text-align: center;
+    margin-bottom: 50px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about-header h2 {
+    font-size: 36px;
+    font-weight: 600;
+    color: #202124;
+    margin-bottom: 16px;
+    background: linear-gradient(135deg, #01875f, #02a877);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.about-intro {
+    font-size: 18px;
+    color: #5f6368;
+    line-height: 1.8;
+    font-weight: 500;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-bottom: 50px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about-card {
+    background: white;
+    padding: 32px;
+    border-radius: 16px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+    text-align: center;
+    transition: all 0.3s ease;
+    border: 1px solid #f0f0f0;
+}
+
+.about-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 24px rgba(1, 135, 95, 0.12);
+    border-color: #01875f;
+}
+
+.card-icon {
+    font-size: 48px;
+    margin-bottom: 16px;
+}
+
+.about-card h3 {
+    font-size: 22px;
+    color: #202124;
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+.about-card p {
+    color: #5f6368;
+    line-height: 1.7;
+    font-size: 15px;
+}
+
+.about-content {
+    background: white;
+    padding: 40px;
+    border-radius: 16px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+}
+
+.about-section h3 {
+    font-size: 28px;
+    color: #202124;
+    margin-bottom: 32px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.about-section h3::before {
+    content: '';
+    width: 4px;
+    height: 28px;
+    background: linear-gradient(135deg, #01875f, #02a877);
+    border-radius: 2px;
+}
+
+.benefits-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.benefit-item {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+.benefit-item:hover {
+    background: #f0f8f6;
+    transform: translateX(4px);
+}
+
+.benefit-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    background: #01875f;
+    color: white;
+    border-radius: 50%;
+    font-weight: bold;
+    flex-shrink: 0;
+    font-size: 18px;
+}
+
+.benefit-item strong {
+    color: #202124;
+    font-size: 16px;
+    display: block;
+    margin-bottom: 4px;
+}
+
+.benefit-item p {
+    color: #5f6368;
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.section-about p {
+    color: #5f6368;
+    line-height: 1.6;
+}
+
+.section-contact {
+    background: #F1F3F4;
+    padding: 40px 24px 80px;
+}
+
+.section-contact h2 {
+    font-size: 28px;
+    margin-bottom: 12px;
+}
+
+.contact-btn {
+    min-width: 220px;
+    height: 48px;
+    padding: 0 24px;
+}
+
+/* Responsive: ajustes para mobile */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 16px;
+        height: auto;
+    }
+
+    .app-header {
+        flex-direction: column;
+        gap: 16px;
+        margin: 32px auto 24px;
+        padding: 0 8px;
+    }
+
+    .app-icon {
+        width: 120px;
+        height: 120px;
+        border-radius: 18px;
+    }
+
+    .app-info h1 {
+        font-size: 20px;
+    }
+
+    .description {
+        max-width: 100%;
+        font-size: 15px;
+    }
+
+    .app-actions {
+        flex-direction: column;
+        gap: 12px;
+        align-items: stretch;
+    }
+
+    .btn,
+    .contact-btn {
+        width: 100%;
+        min-width: 0;
+        height: 48px;
+        padding: 0 16px;
+    }
+
+    .gallery img {
+        width: 180px;
+    }
+
+    .menu {
+        gap: 12px;
+    }
+
+    .menu a {
+        font-size: 14px;
+    }
+
+    .logo span {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 420px) {
+    .app-icon {
+        width: 100px;
+        height: 100px;
+    }
+
+    .app-info h1 {
+        font-size: 18px;
+    }
+
+    .container {
+        padding: 0 12px;
+    }
+
+    .gallery img {
+        width: 150px;
+    }
+}
